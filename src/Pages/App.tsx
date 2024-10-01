@@ -1,0 +1,53 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import TermsAndService from './Terms&Service'; 
+import LandingPage from './LandingPage'; 
+import '../CSS/navbar.css';
+import '../CSS/index.css';
+import logo from '../assets/ESKIWI.svg'; 
+import Gema from '../assets/Gemaeskiwi.svg';
+import Button from '../Components/ButtonNav';
+import '../CSS/ButtonNav.css'
+import '../CSS/Terms.css'
+
+
+    
+  
+
+const App: React.FC = () => {
+    const handleClick = () => {
+      };
+
+    return (
+    <BrowserRouter>
+        <div className="app">
+            <header className="header">
+              <div className="logo">
+                <img src={logo} alt="logo" className="logo" />
+              </div>
+              <ul className="menu">
+                <li className="menu-item">
+                  <Link to="/about"><Button className='btn' label="ABOUT" onClick={handleClick}/></Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <img src={Gema} className="gema" alt="gema" />
+                  </Link>
+                </li>
+                <li></li>
+                <li className="menu-item">
+                  <Link to="/terms"><Button className='btn1' label="TERMS AND CONDITIONS" onClick={handleClick}/></Link>
+                </li>
+              </ul>
+            </header>
+            <Routes>
+              <Route path="/" element={<LandingPage />} /> 
+              <Route path="/terms" element={<TermsAndService />} />
+            </Routes>
+          </div>
+        
+      </BrowserRouter>
+    );
+  };
+  
+  export default App;

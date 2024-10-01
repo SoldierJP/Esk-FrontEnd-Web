@@ -1,0 +1,28 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 0px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+.btn:hover{
+    color:#FC5193 ;
+}
+
+
+.btn1{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+.btn1:hover{
+    color:#FC5193 ;
+}
