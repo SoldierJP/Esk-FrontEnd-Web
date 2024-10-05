@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import TermsAndService from './Terms&Service'; 
@@ -12,8 +13,6 @@ import '../CSS/Terms.css'
 
 
     
-  
-
 const App: React.FC = () => {
     const handleClick = () => {
       };
@@ -27,7 +26,7 @@ const App: React.FC = () => {
               </div>
               <ul className="menu">
                 <li className="menu-item">
-                  <Link to="/about"><Button className='btn' label="ABOUT" onClick={handleClick}/></Link>
+                  <Link to="/"><Button className='btn' label="ABOUT" onClick={handleClick}/></Link>
                 </li>
                 <li>
                   <Link to="/">
