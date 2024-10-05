@@ -55,9 +55,7 @@ const LandingPage: React.FC = () => {
       <div className="seccion1">
         <button className="image-button"><img src="/src/assets/appledown.png"></img></button>
         <button className="image-button1"><img src="/src/assets/androiddown.png"></img></button>
-        <div className="blur-box">
-          <h1>THIS IS A GROUNDBREAKING PLATAFORM DESIGNED TO <span className="rosado">EMPOWER</span> CREATORS.</h1>
-        </div>
+
       </div>
       
       
