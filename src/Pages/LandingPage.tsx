@@ -4,7 +4,8 @@ import '../CSS/index.css';
 import '../CSS/navbar.css';
 import 'aos/dist/aos.css';
 import AOS from "aos";
-
+import androidlogo from '../assets/androiddown.png';
+import ioslogo from '../assets/appledown.png';
 
 
 
@@ -53,9 +54,8 @@ const LandingPage: React.FC = () => {
 
     <div className="app">
       <div className="seccion1">
-        <button className="image-button"><img src="/src/assets/appledown.png"></img></button>
-        <button className="image-button1"><img src="/src/assets/androiddown.png"></img></button>
-
+        <button className="image-button"><img src={ioslogo}></img></button>
+        <button className="image-button1"><img src={androidlogo}></img></button>
       </div>
       
       

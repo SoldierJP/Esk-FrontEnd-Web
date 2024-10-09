@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import '../CSS/navbar.css';
 import '../CSS/Terms.css'; 
+import terms from '../assets/Txt/message.txt';
 
 const TermsAndService: React.FC = () => {
   const [termsContent, setTermsContent] = useState<string>(''); 
 
   useEffect(() => {
-    fetch('/src/assets/Txt/message.txt')
+    fetch(terms)
       .then((response) => response.text())
       .then((text) => {
         setTermsContent(text); 
