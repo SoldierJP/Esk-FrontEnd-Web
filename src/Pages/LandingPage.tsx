@@ -54,8 +54,10 @@ const LandingPage: React.FC = () => {
 
     <div className="app">
       <div className="seccion1">
+        <div className="contenedorbotones">
         <button className="image-button"><img src={ioslogo}></img></button>
         <button className="image-button1"><img src={androidlogo}></img></button>
+        </div>
       </div>
       
       

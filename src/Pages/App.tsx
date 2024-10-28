@@ -24,6 +24,7 @@ const App: React.FC = () => {
               <div className="logo">
                 <img src={logo} alt="logo" className="logo" />
               </div>
+              <div className='navbar-content'>
               <ul className="menu">
                 <li className="menu-item">
                   <Link to="/"><Button className='btn' label="ABOUT" onClick={handleClick}/></Link>
@@ -35,9 +36,10 @@ const App: React.FC = () => {
                 </li>
                 <li></li>
                 <li className="menu-item">
-                  <Link to="/terms"><Button className='btn1' label="TERMS AND CONDITIONS" onClick={handleClick}/></Link>
+                  <Link to="/terms"><Button className='btn1' label="TOS" onClick={handleClick}/></Link>
                 </li>
               </ul>
+              </div>
             </header>
             <Routes>
               <Route path="/" element={<LandingPage />} /> 

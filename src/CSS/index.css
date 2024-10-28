@@ -104,64 +104,59 @@ body{
 }
 
 
-.logo{
-  width: 200px;
-  height: 40px;
-  padding-right: 40px;
-  padding-bottom: 5px;
-  
-}
+
 .img{
   width: 300px;
 }
 
-.image-button { 
-  position: absolute;
-  top: 75%;
-  left: 41%;
-  bottom: 20px;
-  right: auto; 
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  text-align: center;
-  z-index: 2; 
+
+.contenedorbotones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 140vh; 
+ right: 8px;
 }
 
-.image-button1 {
-  position: absolute;
-  top: 75%;
-  left: 49.7%; 
-  bottom: 20px;
-  right: auto;
-  transform: translateY(-50%);
+.image-button, .image-button1 { 
+  padding: 10px;
   background: none;
   border: none;
   text-align: center;
   z-index: 2;
 }
 
-.image-button img {
-  width: 150px;     
+/* Ajustes de la imagen */
+.image-button img, .image-button1 img {
+  width: 15vw; /* 15% del ancho del viewport */
+  max-width: 150px; /* Limitar el tamaño máximo a 150px */
   height: auto;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
-.image-button1 img {
-  width: 150px; 
-  height: auto;   
-  transition: transform 0.3s ease; 
-}
-
-.image-button img:hover {
+.image-button img:hover, .image-button1 img:hover {
   transform: scale(1.1); 
   cursor: pointer;
 }
 
-.image-button1 img:hover {
-  transform: scale(1.1); 
-  cursor: pointer;
+@media (min-width: 1200px) {
+  .image-button img, .image-button1 img {
+    width: 9vw; /* Ajustar el tamaño a 10% del ancho del viewport en pantallas grandes */
+    max-width: 200px; /* Permitir que crezcan hasta 200px */
+  }
 }
+
+@media (max-width: 768px) {
+  .image-button img, .image-button1 img {
+    width: 15vw; /* Usar 40% del ancho del viewport en pantallas pequeñas */
+    max-width: 100px; 
+  }
+}
+
+
+
 
 .blur-box {
   position: absolute;            
