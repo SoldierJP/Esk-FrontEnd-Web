@@ -7,7 +7,7 @@ import '../CSS/navbar.css';
 import '../CSS/index.css';
 import logo from '../assets/ESKIWI.svg'; 
 import Gema from '../assets/Gemaeskiwi.svg';
-import Button from '../Components/ButtonNav';
+import Button from '../components/ButtonNav';
 import '../CSS/ButtonNav.css'
 import '../CSS/Terms.css'
 
