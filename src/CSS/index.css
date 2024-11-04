@@ -143,14 +143,16 @@ body{
 
 @media (min-width: 1200px) {
   .image-button img, .image-button1 img {
-    width: 9vw; /* Ajustar el tamaño a 10% del ancho del viewport en pantallas grandes */
-    max-width: 200px; /* Permitir que crezcan hasta 200px */
+    width: 9vw; 
+    max-width: 200px; 
   }
 }
 
+
+
 @media (max-width: 768px) {
   .image-button img, .image-button1 img {
-    width: 15vw; /* Usar 40% del ancho del viewport en pantallas pequeñas */
+    width: 15vw; 
     max-width: 100px; 
   }
 }

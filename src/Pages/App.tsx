@@ -21,9 +21,7 @@ const App: React.FC = () => {
     <BrowserRouter>
         <div className="app">
             <header className="header">
-              <div className="logo">
-                <img src={logo} alt="logo" className="logo" />
-              </div>
+              
               <div className='navbar-content'>
               <ul className="menu">
                 <li className="menu-item">
